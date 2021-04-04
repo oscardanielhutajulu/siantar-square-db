@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    
+    siantar-square-db:
+        image: siantar-square-db
+        container_name: siantar-square-db
+        ports:
+            - '5432:5432'
+        networks:
+            - siantar-square-network
+
+networks:
+  siantar-square-network:
+    external: true
